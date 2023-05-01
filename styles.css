@@ -65,7 +65,11 @@ a {
 
 /* Header */
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 200px 50px;
+    height: calc(90vh);
 }
 
 /* Sections */
@@ -87,11 +91,7 @@ section {
     margin: 10px 0;
 }
 
-@media only screen and (max-width: 768px) {
-    section {
-        padding: 20px 0;
-    }
-
+@media only screen and (max-width: 900px) {
     .content {
         width: 95%;
     }
@@ -102,6 +102,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 0 auto;
 }
 
 .movie-block {
@@ -109,6 +110,8 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .movie-block img {
@@ -117,14 +120,13 @@ section {
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 0.5rem;
-    overflow: hidden;
 }
 
 .vote-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 90%;
     height: 20px;
     background-color: #00c92b;
     margin-bottom: 10px;
@@ -161,15 +163,18 @@ section {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
     #movies {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .movie-block {
+        width: 100%;;
+    }
+
     .movie-block img {
-        max-width: 200px;
-        margin-bottom: 10px;
-        border-radius: 0.5rem;
+        width: 90%;
+        
     }
 }
 
