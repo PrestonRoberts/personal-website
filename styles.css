@@ -1,0 +1,180 @@
+:root {
+    --accent-color: #
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 67px;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 38px;
+    color: #ffffffdc;
+}
+
+h4 {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+h5 {
+    font-size: 21px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+a {
+    color: #ffffff;
+}
+
+/* Customize scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }  
+
+/* Header */
+header {
+    padding: 200px 50px;
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    background-color: #0000006b;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+.element, .sub-element {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 20px 0;
+    }
+
+    .content {
+        width: 95%;
+    }
+}
+
+/* Movie Section */
+#movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.movie-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.movie-block img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.vote-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    background-color: #00c92b;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+}
+
+.like-count, .dislike-count {
+    padding: 0 10px;
+}
+
+.like-count {
+    float: left;
+}
+
+.dislike-count {
+    float: right;
+}
+
+.rate {
+    display: flex;
+    justify-content: center;
+}
+
+.rate button {
+    margin: 0 10px;
+    width: 75px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #0077ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    #movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-block img {
+        max-width: 200px;
+        margin-bottom: 10px;
+        border-radius: 0.5rem;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #4d4d4d;
+}
