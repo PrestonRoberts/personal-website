@@ -1,0 +1,121 @@
+/* -------------------------------------------------------------- */
+/* Fonts */
+
+/* find fonts that you like from https://www.google.com/fonts/ and include them here*/
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|PT+Serif|Permanent+Marker|Shrikhand');
+
+/*
+font-family: 'Black Han Sans', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Shrikhand', cursive;
+font-family: 'Permanent Marker', cursive;
+*/
+/* -------------------------------------------------------------- */
+/*Colors*/
+/* https://coolors.co/000000-1c1c1c-1b0033-003300-330000 */
+/* -------------------------------------------------------------- */
+
+body {
+    color: #ffffff; 
+    background-color: #1C1C1C;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+p{
+    margin-left: 300px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0;
+    color: red;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+h4{
+    margin-left: 4rem;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------------------- */
+
+#fontFix {
+    visibility: hidden;	   /* hide this section */
+}
+
+.font-Hans {
+    font-family: 'Black Han Sans', sans-serif; 
+}
+
+.font-PT {
+    font-family: 'PT Serif', serif;
+}
+
+.font-Shirk {
+    font-family: 'Shrikhand', cursive;
+}
+
+.font-Marker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+/* -------------------------------------------------------------- */
+
+#myCanvas {
+    
+}
+
+/* -------------------------------------------------------------- */
+.center-text {
+    text-align: center;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Preston Roberts</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
     </head>
     <body>
         <div id="moon-glow"></div>
@@ -18,7 +19,7 @@
             <!-- My Favorite Movies and Shows -->
             <section>
                 <div class="content">
-                    <h2>Favorite Media</h2>
+                    <h2>Favorite Movies and Shows</h2>
                     <div class="element">
                         <div id="movies">
                             <div class="movie-block">
@@ -26,8 +27,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="spider-man">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -37,8 +40,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="joker">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -48,8 +53,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="pulp-fiction">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -59,8 +66,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="demon-slayer">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -71,8 +80,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="arcane">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -83,8 +94,10 @@
                                 <div class="vote-bar">
                                     <span class="like-count">0</span>
                                     <span class="dislike-count">0</span>
+                                    <div class="like-bar"></div>
+                                    <div class="dislike-bar"></div>
                                 </div>
-                                <div class="rate">
+                                <div class="rate" id="stranger-things">
                                     <button>Like</button>
                                     <button>Dislike</button>
                                 </div>
@@ -124,40 +137,76 @@
 
             <!-- Projects -->
             <section>
-                <div class="content">
+                <div class="content" id="projects">
                     <h2>Projects</h2>
                     <div class="element">
-                        <h3>Artifice</h3>
+                            <div class="project">
+                                <h3>
+                                    <a href="https://github.com/PrestonRoberts/artifice" target="_blank">
+                                        Artifice
+                                    </a>
+                                </h3>
+                                <h4>Solo Project</h4>
+                                <h5>2022</h5>
+                            </div>
+                    </div>
+
+                    <div class="element">
+                        <h3>
+                            <a href="https://prestonroberts.itch.io/maze-run" target="_blank">
+                                Maze Run
+                            </a>
+                        </h3>
                         <h4>Solo Project</h4>
                         <h5>2022</h5>
                     </div>
 
                     <div class="element">
-                        <h3>Stream Beast</h3>
+                        <h3>
+                            <a href="https://github.com/PrestonRoberts/stream-beast" target="_blank">
+                                Stream Beast
+                            </a>
+                        </h3>
                         <h4>Solo Project</h4>
                         <h5>2022</h5>
                     </div>
 
                     <div class="element">
-                        <h3>Game Way</h3>
+                        <h3>
+                            <a href="https://github.com/cse442-at-ub/cse442-semester-project-team-gameway" target="_blank">
+                                Game Way
+                            </a>
+                        </h3>
                         <h4>Team Project at the University at Buffalo</h4>
                         <h5>Spring, 2020</h5>
                     </div>
 
                     <div class="element">
-                        <h3>Mafia Game</h3>
+                        <h3>
+                            <a href="https://github.com/PrestonRoberts/mafia-1" target="_blank">
+                                Mafia Game
+                            </a>
+                        </h3>
                         <h4>Solo Project</h4>
                         <h5>2019</h5>
                     </div>
 
                     <div class="element">
-                        <h3>Tune Guesser</h3>
+                        <h3>
+                            <a href="https://github.com/JohnHHunter/Tune-Guesser" target="_blank">
+                                Tune Guesser
+                            </a>
+                        </h3>
                         <h4>Team Project at Ithaca College</h4>
                         <h5>Fall, 2018</h5>
                     </div>
 
                     <div class="element">
-                        <h3>Escape the Dark</h3>
+                        <h3>
+                            <a href="escape_the_dark/EscapeTheDark.html" target="_blank">
+                                Escape the Dark
+                            </a>
+                        </h3>
                         <h4>Solo Project</h4>
                         <h5>Spring, 2018</h5>
                     </div>
