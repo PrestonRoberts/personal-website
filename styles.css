@@ -11,7 +11,7 @@
 }
 
 body {
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    background: rgb(15, 18, 27);
     color: #ffffff;
     font-size: 16px;
     font-family: sans-serif;
@@ -46,7 +46,7 @@ a {
     color: #ffffff;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
     h1 {
         font-size: 42px;
     }
@@ -91,16 +91,21 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 200px 50px;
-    height: calc(90vh);
+    height: calc(60vh);
 }
 
 /* Sections */
 section {
-    margin: 20px auto;
+    margin: 0 auto;
     background-color: #0000006b;
     padding: 20px 0;
     display: flex;
     justify-content: center;
+    border-bottom: black solid 5px;
+}
+
+section:first-of-type {
+    border-top: black solid 5px;
 }
 
 .content {
@@ -122,7 +127,7 @@ section {
 /* Movie Section */
 #movies {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     margin: 0 auto;
 }
@@ -132,7 +137,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -164,7 +169,7 @@ section {
   
 .like-bar {
     left: 0;
-    background-color: #00c92b;
+    background-color: #00cf2d;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -211,21 +216,17 @@ section {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1500px) {
     #movies {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .movie-block {
-        width: 100%;;
-    }
-
-    .movie-block img {
-        width: 90%;
-        
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
+@media only screen and (max-width: 650px) {
+    #movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 /* Projects section */
 #projects .element {
@@ -238,8 +239,16 @@ section {
     background-color: #0d1d31;
 }
 
+#projects .element:first-of-type {
+    border-radius: 20px 20px 0 0;
+}
+
+#projects .element:last-of-type {
+    border-radius: 0 0 20px 20px;
+}
+
 #projects a {
-    color: #00eeff;
+    color: #ffffff;
 }
 
 /* Footer */
